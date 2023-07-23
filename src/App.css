@@ -3,6 +3,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-color: hsl(220deg 13% 13%);
 }
 
 .App-logo {
@@ -27,9 +28,12 @@
 }
 
 .App-section {
-  flex: 1 1 0;
-  background-color: hsl(220deg 13% 13%);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  gap: 4rem;
 }
 
 .App-link {
@@ -43,4 +47,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.attributes-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.attribute {
+  display: flex;
+  gap: 10px;
+}
+
+.classes-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.class-overview {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.class {
+  cursor: pointer;
+}
+
+.class.active {
+  color: red;
+}
+
+.class-detail-container {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.class-detail-container.inactive {
+  display: none;
+}
+
+.class-detail-container button {
+  margin-top: 1rem;
+}
+
+.class-attribute-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill-container {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.skill {
+  display: flex;
+  gap: 1rem;
 }
